@@ -54,7 +54,8 @@ p.story_links {
 }
 
 p.story_links a{
- 
+ color: rgb(101, 145, 255);
+ text-decoration: none;
 }
 
 .feature_wrap {
