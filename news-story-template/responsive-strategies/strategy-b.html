@@ -53,6 +53,7 @@
             <!-- This 'loop' generates a list item for each story in the 'stories' array. -->
             <li v-for="story in stories" class="story_item">
                 <article>
+
                     <!-- Story title (linked) -->
                     <h1 class="story_headings">
                         <a v-bind:href="story.url">{{ story.title }}</a>
@@ -62,15 +63,18 @@
                     <sub class="story_dates">
                         {{ story.date }}
                     </sub>
-
-                    <!-- Story description -->
-                    <p class="story_description">
-                        {{ story.description }}
-                    </p>
-
-                    <!-- Story image -->
-                    <img class="story_image" v-bind:src="story.image">
-
+                    <section class="side_by_side">
+                        <div class="side_by_side_item">
+                            <!-- Story image -->
+                            <img class="story_image" v-bind:src="story.image">
+                        </div>
+                        <div class="side_by_side_item">
+                            <!-- Story description -->
+                            <p class="story_description">
+                                {{ story.description }}
+                            </p>
+                        </div>
+                    </section>
                     <!-- Story content (truncated) -->
                     <!-- <span v-html="story.content"></span> -->
 
