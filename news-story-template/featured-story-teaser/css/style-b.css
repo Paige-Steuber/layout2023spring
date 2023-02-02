@@ -51,8 +51,13 @@ section.side_by_side {
 @media only screen and (min-width: 768px) {
     section.side_by_side {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         column-gap: 9px;
+    }
+
+    section.side_by_side.featured_side{
+        grid-template-columns: 1fr 1fr;
+        
     }
 
     body {
@@ -85,6 +90,10 @@ section.side_by_side {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+    .side_by_side_featured{
+        grid-template-columns: 1fr 1fr;
+    }
+
 
     
     
