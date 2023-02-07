@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Stories List Template</title>
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<header>
+    <div>
+        <h1>Front Paige News</h1>
+        <h2>Where the New is News</h2>
+    </div>
+    <div>
+        <ul>
+            <li>
+                Home
+            </li>
+            <li>
+                Local
+            </li>
+            <li>
+                International
+            </li>
+            <li>
+                More
+            </li>
+            <li>
+                About
+            </li>
+        </ul>
+    </div>
+</header>
+
+
+<body>
+    <div class="body">
+    
+    <div id="news-stories-list-template" v-cloak>
+
+        <!-- The Featured Story -->
+        <h1 class="section_headings">Featured Story</h1>
+        <div class="feature_wrap">
+
+
+
+            <!-- Story title (linked) -->
+            <h1 class="story_headings">
+                <a v-bind:href="featuredStory.url" class="story_headings">{{ featuredStory.title }}</a>
+            </h1>
+            <!-- Story date -->
+            <sub class="story_dates">
+                {{ featuredStory.date }}
+            </sub>
+
+
+            <section class="side_by_side">
+                <div class="side_by_side_item">
+
+
+                </div>
+                <div class="side_by_side_item">
+
+
+                </div>
+                <div class="side_by_side_item">
+                    <!-- Story image -->
+                    <img v-bind:src="featuredStory.image" class="story_image">
+
+                </div>
+                <div class="side_by_side_item">
+                    <!-- Story description -->
+                    <p class="story_description">
+                        {{ featuredStory.description }}
+                    </p>
+                    <hr>
+                    <!-- Story content (truncated) -->
+                    <span v-html="featuredStory.content" class="story_content"></span>
+
+                </div>
+            </section>
+
+
+
+
+
+
+
+            <p class="story_links">
+                <!-- Story source (linked) -->
+                <a v-bind:href="featuredStory.source.url">{{ featuredStory.source.name }}</a>
+            </p>
+        </div>
+
+        <!-- Debugging info, you can comment this section out when you don't need it. -->
+        <pre>The featured story object: {{ featuredStory | json }}</pre>
+
+        <!-- Stories List -->
+        <h1 class="section_headings">Other Stories</h1>
+        <ul class="story_list">
+            <!-- This 'loop' generates a list item for each story in the 'stories' array. -->
+            <li v-for="story in stories" class="story_item">
+                <article>
+                    <!-- Story title (linked) -->
+                    <h1 class="story_headings">
+                        <a v-bind:href="story.url">{{ story.title }}</a>
+                    </h1>
+
+                    <!-- Story date -->
+                    <sub class="story_dates">
+                        {{ story.date }}
+                    </sub>
+
+                    <!-- Story description -->
+                    <p class="story_description">
+                        {{ story.description }}
+                    </p>
+
+                    <!-- Story image -->
+                    <img class="story_image" v-bind:src="story.image">
+
+                    <!-- Story content (truncated) -->
+                    <!-- <span v-html="story.content"></span> -->
+
+                    <!-- Story source (linked) -->
+                    <p class="story_links">
+                        <a v-bind:href="story.source.url">{{ story.source.name }}</a>
+                    </p>
+                </article>
+
+            </li>
+        </ul>
+
+        <!-- Debugging info, you can comment this section out when you don't need it. -->
+        <pre>The stories array: {{ stories | json }}</pre>
+
+    </div>
+
+    <!-- These scripts load the Vue library, and the actual story content. -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://abesiemsen.github.io/layout2023spring-resources/projects/news-story-template/data.js"></script>
+</div>
+</body>
+
+</html>
