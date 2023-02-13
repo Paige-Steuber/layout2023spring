@@ -2,8 +2,12 @@
 <html>
 
 <head>
+    <title>Front Paige News</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News Stories List Template</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://www.studlife.com/favicon.ico?v=2" />
+  
     <style>
         [v-cloak] {
             display: none;
@@ -14,32 +18,51 @@
         }
     </style>
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Gothic A1' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <header>
-    <div>
-        <h1>Front Paige News</h1>
-        <h2>Where the New is News</h2>
-    </div>
-    <div>
-        <ul >
-            <li>
-                Home
-            </li>
-            <li>
-                Local
-            </li>
-            <li>
-                International
-            </li>
-            <li>
-                More
-            </li>
-            <li>
-                About
-            </li>
-        </ul>
-    </div>
+    <nav>
+        <div class="title">
+
+        </div>
+        <div class="nav_list">
+            <div id="otherLinks">
+                <ul>
+                    <li style="float:left">
+                        <h1 id="nav_h1">Front Paige News</h1>
+                        <hr>
+                        <h2>Where the News is News</h2>
+                    </li>
+                    <li><a href="#" class="nav_buttons">About</a></li>
+                    <li><a href="#" class="nav_buttons">More</a></li>
+                    <li><a href="#" class="nav_buttons">International</a></li>
+                    <li><a href="#" class="nav_buttons">Local</a></li>
+                    <li><a href="#" class="nav_buttons">Home</a></li>
+
+                    <li><a href="javascript:void(0);" class="icon" onclick="myFunction()" id="hamburger">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="myLinks">
+                <ul>
+                    <a href="#">Home</a>
+                    <a href="#">Local</a>
+                    <a href="#">International</a>
+                    <a href="#">More</a>
+                    <a href="#">About</a>
+
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+
 </header>
 
 
@@ -151,5 +174,16 @@
     <script src="https://abesiemsen.github.io/layout2023spring-resources/projects/news-story-template/data.js"></script>
 </div>
 </body>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
 
 </html>
