@@ -33,7 +33,7 @@
                 <ul>
                     <li style="float:left">
                         <h1 id="nav_h1">Front Paige News</h1>
-                        <hr>
+                        <hr/>
                         <h2>Where the News is News</h2>
                     </li>
                     <li><a href="#" class="nav_buttons">About</a></li>
@@ -72,7 +72,6 @@
     <div id="news-stories-list-template" v-cloak>
 
         <!-- The Featured Story -->
-        <h1 class="section_headings">Featured Story</h1>
         <div class="feature_wrap">
 
 
@@ -129,7 +128,6 @@
         <pre>The featured story object: {{ featuredStory | json }}</pre>
 
         <!-- Stories List -->
-        <h1 class="section_headings">Other Stories</h1>
         <ul class="story_list">
             <!-- This 'loop' generates a list item for each story in the 'stories' array. -->
             <li v-for="story in stories" class="story_item">

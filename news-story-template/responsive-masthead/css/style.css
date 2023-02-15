@@ -8,6 +8,7 @@ html {
 header {
     position: fixed;
     width: 100%;
+    background-color: rgba(242, 242, 242, 1);
 }
 
 /* navbar */
@@ -15,7 +16,10 @@ nav {
     position: sticky;
     width: 100%;
     top: 0;
-
+    max-width: 1000px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -50,16 +54,15 @@ nav h2 {
     font-size: 14px;
 }
 
-.nav_list {}
-
 nav ul {
 
     list-style-type: none;
     margin: 0;
-    padding: 16px;
-    padding-left: 30px;
+    padding: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
     overflow: hidden;
-    background-color: rgba(242, 242, 242, 1);
     height: 60px;
 }
 
@@ -71,16 +74,18 @@ nav li a {
     display: block;
     color: rgba(87, 96, 102, 1) !important;
     text-align: center;
-    padding: 10px 20px;
+    padding: 8px 35px;
+
     text-decoration: none;
     font-size: 14px;
 }
 
 .nav_buttons {
-    background-color: rgba(149, 129, 141, 1);
+    background-color: rgba(227, 192, 211, 1);
     bottom: 0;
     margin: 2px;
     margin-top: 25px;
+    border-radius: 5zpx;
 
 }
 
@@ -129,6 +134,11 @@ nav li a {
     #hamburger {
         display: flex;
         float: right;
+        padding: 0;
+        margin-left: auto;
+        margin-bottom: auto;
+        margin-top: 11px;
+        
     }
 
     nav h1 {
@@ -149,12 +159,25 @@ nav li a {
         max-width: 100%;
     }
 
-    nav {
-        max-width: 100%;
-        position: fixed;
-    }
+  
 }
 
+@media only screen and (max-width: 600px) {
+    header {
+        width: 100%;
+        height: 80px;
+    }
+
+    nav {
+        position: sticky;
+        width: 100%;
+        top: 0;
+        max-width: 1000px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 /* main area */
 
@@ -163,7 +186,8 @@ body {
 }
 
 .body {
-    padding-top: 100px;
+    padding-top: 150px;
+    width: 95%;
     max-width: 360px;
     margin: auto;
 }
@@ -200,6 +224,7 @@ li.story_item:hover {
 }
 
 .feature_wrap {
+    /* background-color: rgba(149, 129, 141, 1); */
 
     /* display: none; */
     margin-left: auto;
@@ -243,23 +268,20 @@ li.story_item:hover {
     ul.story_list {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 20px;
 
-    }
-
-    li.story_item {
-        margin-left: 3%;
-        margin-right: 3%;
     }
 
     .feature_wrap {
-        width: 70%;
-        padding: 60px;
+        /* width: 70%; */
+        padding: 100px;
         padding-top: 30px;
         padding-bottom: 30px;
     }
 
     .body {
-        max-width: 1300px;
+        width: 90%;
+        max-width: 1000px;
     }
 
     section.side_by_side {
@@ -307,10 +329,6 @@ p.story_links a {
     color: rgb(101, 145, 255);
     text-decoration: none;
 }
-
-
-
-.feature_wrap img {}
 
 .story_headings {
     font-size: 20px;
