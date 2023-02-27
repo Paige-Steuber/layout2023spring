@@ -10,6 +10,9 @@ header {
     position: fixed;
     width: 100%;
     background-color: rgba(242, 242, 242, 1);
+    -webkit-box-shadow: 4px 4px 21px -12px rgba(227, 192, 211, 1);
+    -moz-box-shadow: 4px 4px 21px -12px rgba(227, 192, 211, 1);
+    box-shadow: 4px 4px 21px -12px rgba(227, 192, 211, 1);
 }
 
 /* navbar */
@@ -337,11 +340,11 @@ li.story_item {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 6%;
-    border-radius: 20px;
-    /* background-color: rgb(248, 248, 248); */
-    -webkit-box-shadow: 4px 4px 21px -12px rgba(18, 41, 50, 1);
+    border-radius: 3px;
+    background-color: rgba(242, 242, 242, 1);
+    /* -webkit-box-shadow: 4px 4px 21px -12px rgba(18, 41, 50, 1);
     -moz-box-shadow: 4px 4px 21px -12px rgba(18, 41, 50, 1);
-    box-shadow: 4px 4px 21px -12px rgba(18, 41, 50, 1);
+    box-shadow: 4px 4px 21px -12px rgba(18, 41, 50, 1); */
 }
 
 li.story_item:hover {
@@ -364,10 +367,10 @@ li.story_item:hover {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 6%;
-    border-radius: 20px;
-    -webkit-box-shadow: 4px 4px 21px -12px rgba(18, 41, 50, 1);
-    -moz-box-shadow: 4px 4px 21px -12px rgba(18, 41, 50, 1);
-    box-shadow: 4px 4px 21px -12px rgba(18, 41, 50, 1);
+    border-radius: 3px;
+    -webkit-box-shadow: 4px 4px 21px -12px rgba(227, 192, 211, 1);
+    -moz-box-shadow: 4px 4px 21px -12px rgba(227, 192, 211, 1);
+    box-shadow: 4px 4px 21px -12px rgba(227, 192, 211, 1);
 }
 
 
@@ -443,6 +446,15 @@ h1.story_headings a {
 
 h1.story_headings a:hover {
     color: rgb(101, 145, 255);
+}
+
+hr {
+
+    color: rgba(227, 192, 211, 1);
+    height: 1px;
+    background-color: rgba(227, 192, 211, 1);
+    border: none;
+
 }
 
 p.story_description {
