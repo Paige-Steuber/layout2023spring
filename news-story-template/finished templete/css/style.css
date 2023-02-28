@@ -349,10 +349,10 @@ li.story_item {
 
 li.story_item:hover {
     border-radius: 10px;
-
+/* 
     -webkit-box-shadow: 8px 8px 21px -12px rgba(18, 41, 50, 1);
     -moz-box-shadow: 8px 8px 21px -12px rgba(18, 41, 50, 1);
-    box-shadow: 8px 8px 21px -12px rgba(18, 41, 50, 1);
+    box-shadow: 8px 8px 21px -12px rgba(18, 41, 50, 1); */
 
 }
 
@@ -475,3 +475,24 @@ p.story_links a {
 .story_headings {
     font-size: 20px;
 }
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(227, 192, 211, 1);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(227, 192, 211, 1);
+  }
