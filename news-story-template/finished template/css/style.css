@@ -376,6 +376,8 @@ li.story_item:hover {
 
 .feature_wrap .story_description {
     font-weight: bold;
+    line-height: 145%;
+    font-size: 1.1em;
 
 }
 
