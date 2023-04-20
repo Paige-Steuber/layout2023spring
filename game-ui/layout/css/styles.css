@@ -1,0 +1,135 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }  
+
+.full_screen{
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    background-color: rgb(39, 82, 119);
+    overflow: hidden;
+    background-image: url("../../assets/map\ first\ rough.png");
+    display: grid;
+    
+}
+
+.game_ui_content{
+    width: 96vw;
+    padding: 2%;
+    height: 90vh;
+    /* background-color: rgb(187, 238, 234); */
+    position:  absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.icons{
+    width: 100px;
+    font-size:70px;
+    height: auto;
+}
+
+/* TOP */
+.top_screen{
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_hub{
+    /* background-color: aqua; */
+    width: 200px;
+    height: 200px;
+    display: flex;
+   flex-wrap: wrap;
+}
+
+.nav_hub{
+    width: 300px;
+    display: flex;
+   flex-wrap: wrap;
+   align-items: end;
+   justify-content: end;
+
+}
+
+#img_compass{
+    width: 170px;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 1000px;
+    padding: 10px;
+}
+
+.map_icon{
+    border: 3px solid black;
+    background-color: brown;
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    right: 150px;
+    top: 150px;
+    position: absolute;
+    border-radius: 100px;
+}
+
+#img_map_icon{
+    width: 80px;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin: auto;
+
+
+}
+
+/* SIDE */
+.side_bar{
+    /* background-color: brown; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: end;
+}
+
+/* BOTTOM */
+.bottom_screen{
+   justify-self: end;
+   justify-self: flex-end;
+    /* background-color: blue; */
+    width:inherit;
+    /* width: 93%; */
+    position: absolute;
+    bottom: 0;
+
+    
+}
+.bottom_screen_content{
+
+    display: flex;
+    justify-content: space-between;
+}
+.hot_bar{
+    height: 80%;
+    display: flex;
+   
+
+}
+
+.hot_bar_slot{
+    height: 100%;
+    width: 100px;
+    border: 3px black solid;
+    border-radius: 15px;
+    margin: 3px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.status_hub{
+    /* position: absolute; */
+    right: 0;
+}
