@@ -1,9 +1,11 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
-  }  
+}
 
-.full_screen{
+
+.full_screen {
     position: relative;
     width: 100vw;
     max-width: 100%;
@@ -12,57 +14,57 @@ html, body {
     overflow: hidden;
     background-image: url("../../assets/map\ first\ rough.png");
     display: grid;
-    
+
 }
 
-.game_ui_content{
-    width: 96vw;
+.game_ui_content {
+    width: 97vw;
     padding: 2%;
     height: 90vh;
     /* background-color: rgb(187, 238, 234); */
-    position:  absolute;
+    position: absolute;
     display: flex;
     flex-direction: column;
 }
 
-.icons{
+.icons {
     width: 100px;
-    font-size:70px;
+    font-size: 70px;
     height: auto;
 }
 
 /* TOP */
-.top_screen{
+.top_screen {
     /* background-color: blueviolet; */
     display: flex;
     justify-content: space-between;
 }
 
-.menu_hub{
+.menu_hub {
     /* background-color: aqua; */
     width: 200px;
     height: 200px;
     display: flex;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
-.nav_hub{
+.nav_hub {
     width: 300px;
     display: flex;
-   flex-wrap: wrap;
-   align-items: end;
-   justify-content: end;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: end;
 
 }
 
-#img_compass{
+#img_compass {
     width: 200px;
     height: auto;
-    
+
 }
 
-.map_icon{
-    
+.map_icon {
+
     width: 60px;
     height: 60px;
     padding: 15px;
@@ -72,15 +74,15 @@ html, body {
     border-radius: 100px;
 }
 
-#img_map_icon{
+#img_map_icon {
     /* width: 90px; */
-   
+
 
 
 }
 
 /* SIDE */
-.side_bar{
+.side_bar {
     /* background-color: brown; */
     width: 100%;
     display: flex;
@@ -90,30 +92,36 @@ html, body {
 }
 
 /* BOTTOM */
-.bottom_screen{
-   justify-self: end;
-   justify-self: flex-end;
-    /* background-color: blue; */
-    width:inherit;
-    /* width: 93%; */
+.bottom_screen {
+    justify-self: end;
+    justify-self: flex-end;
+    width: inherit;
     position: absolute;
     bottom: 0;
 
-    
+
 }
-.bottom_screen_content{
+
+.heart {
+    width: 200px;
+    height: auto;
+}
+
+.bottom_screen_content {
 
     display: flex;
     justify-content: space-between;
 }
-.hot_bar{
+
+.hot_bar {
     height: 80%;
     display: flex;
-   
+    align-items: end;
+
 
 }
 
-.hot_bar_slot{
+.hot_bar_slot {
     height: 60%;
     width: 70px;
     border: 3px black solid;
@@ -123,7 +131,7 @@ html, body {
     margin-bottom: -10px;
 }
 
-.status_hub{
+.status_hub {
     /* position: absolute; */
     right: 0;
 }
