@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 
-    <link rel="shortcut icon"  href="assets/COMPASS_TAB.svg" />
+    <link rel="shortcut icon" href="assets/COMPASS_TAB.svg" />
     <link rel="stylesheet" href="css/styles.css">
 
     <link href='https://fonts.googleapis.com/css?family=Gothic A1' rel='stylesheet'>
@@ -27,7 +27,7 @@
                 <div class="menu_hub">
                     <!-- Menu Icons, top left -- clickable -> opens pop-up -->
 
-                   
+
                     <div class="character_icon icons">
                         <img class="icons" src="assets/CHARACTER_ICON.svg" alt="ll">
 
@@ -42,17 +42,22 @@
                 <div class="nav_hub">
                     <!-- Compass -- spins, map icon click -> open map pop-up -->
                     <div class="map_icon">
-                        <img id="img_map_icon" class="icons" src="assets/MAP_ICON.svg"
-                            alt="ll">
-                            <!-- <i id="img_map_icon" class="fa-solid fa-map icons"></i> -->
+                        <img id="img_map_icon" class="icons" src="assets/MAP_ICON.svg" alt="ll">
+                        <!-- <i id="img_map_icon" class="fa-solid fa-map icons"></i> -->
 
                     </div>
-                    <div class="compass">
-                        <img id="img_compass" src="assets/COMPASS.svg" alt="ll">
+                    <div class="compass_top">
+                        <img id="img_compass_top" src="assets/COMPASS_TOP.svg" alt="ll">
+                        
 
 
                     </div>
-                    
+                    <div class="compass_bottom">
+                        <img id="img_compass_bottom" src="assets/COMPASS_BOTTOM.svg" alt="ll">
+
+                     </div>
+
+
 
                 </div>
             </div>
@@ -61,6 +66,7 @@
                 <!-- Missions slide in left from right side  -->
 
                 <div class="mission_alert">
+                    
                     <img class="mission icons" src="assets/SCROLL_CHECK.svg" alt="ll">
                     <img class="mission icons" src="assets/SCROLL_IN_PROGRASS.svg" alt="ll">
                     <img class="mission icons" src="assets/SCROLL_QUESTION.svg" alt="ll">
@@ -71,35 +77,47 @@
             <div class="bottom_screen">
                 <!-- health -->
                 <div class="bottom_screen_content">
-                <div class="status_hub">
-                    <div class="health">
-                        <img class="heart" src="assets/HEART_HEALTH_FULL.svg" alt="ll">
+                    <div class="status_hub">
+                        <div class="health">
+                            <img class="heart" src="assets/HEART_HEALTH_FULL.svg" alt="ll">
+
+                        </div>
 
                     </div>
-                    
-                </div>
-                <div>
-                    <div class="hot_bar">
-
-                   
-                    <div class="hot_bar_slot"></div>
-                    <div class="hot_bar_slot"></div>
-                    <div class="hot_bar_slot"></div>
-                    <div class="hot_bar_slot"></div>
-
-                </div>
+                    <div>
+                        <div class="hot_bar">
 
 
+                            <div class="hot_bar_slot"></div>
+                            <div class="hot_bar_slot"></div>
+                            <div class="hot_bar_slot"></div>
+                            <div class="hot_bar_slot"></div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="inventory_icon icons">
+                        <img class="icons" src="assets/INVENTORY_ICON.svg" alt="ll">
+                    </div>
                 </div>
-                <div class="inventory_icon icons">
-                    <img class="icons" src="assets/INVENTORY_ICON.svg" alt="ll">
-                </div>
-            </div>
 
             </div>
         </div>
 
-    </div>
+        <div id="pop_up_box" class="pop_ups_box">
+            <div class="popup_blur"></div>
+
+            <div class="popups inventory_popup">
+                <a href="#" class="close" id="close_btn"></a>
+            </div>
+
+
+        </div>
+
 </body>
+
+<script src="script.js"></script>
+
 
 </html>
