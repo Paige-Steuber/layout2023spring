@@ -55,7 +55,7 @@ body {
 }
 
 .nav_hub {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     width: 300px;
     display: flex;
     flex-wrap: wrap;
