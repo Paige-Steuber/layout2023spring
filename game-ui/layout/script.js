@@ -27,7 +27,20 @@ heart.onclick = function(){
     heart_click +=1;
 
     if(heart_click == 1){
-        heart.src="assets/COMPASS_TOP.svg"
+        heart.src="assets/HEART_HEALTH_QUARTER.svg"
+    }
+    if(heart_click == 2){
+        heart.src="assets/HEART_HEALTH_HALF.svg"
+    }
+    if(heart_click == 3){
+        heart.src="assets/HEART_HEALTH_LAST_QUARTER.svg"
+    }
+    if(heart_click == 4){
+        heart.src="assets/HEART_HEALTH_EMPTY.svg"
+    }
+    if(heart_click == 5){
+        heart_click =0;
+        heart.src="assets/HEART_HEALTH_FULL.svg"
     }
 
 };
