@@ -4,6 +4,7 @@ let heart = document.getElementById("heart_interaction");
 let heart_click = 0;
 
 let popup_box = document.getElementById("pop_up_box");
+let popup_img = document.getElementById("popup_img");
 let close_btn = document.getElementById("close_btn");
 
 close_btn.onclick = function(){
@@ -19,6 +20,9 @@ map_btn.onclick = function(){
     popup_box.classList.toggle('active');
     popup_box.style.opacity = 1;
     popup_box.style.display = "block";
+    popup_img.src="assets/MAP_POPUP.svg"
+
+
 
 };
 
