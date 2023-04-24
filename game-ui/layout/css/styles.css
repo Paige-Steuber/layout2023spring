@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    cursor: url("assets/CURSOR.svg"), auto;
 }
 
 
@@ -164,6 +165,50 @@ body {
     height: 200px;
     display: flex;
     flex-direction: column;
+    margin-top: 100px;
+}
+
+.mission_hover{
+   display: flex;
+   color: #33333300;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    margin-top: 10px;
+
+    transition: all .5s;
+}
+
+.mission_hover p{
+    width: 150px;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mission_status{
+    font-weight: bold
+}
+
+.mission_hover:hover{
+    cursor: pointer;
+    background-color: #7CA0AE;
+    color: #333333;
+    border-radius: 20px;
+    width: 300px;
+    margin-left: -200px;
+}
+
+@keyframes mission_slide {
+    from {
+        transform:skewX(0);
+    }
+    to {
+        transform:skewX(50px);
+    }
+}
+
+.mission_hover img{
+    height: 100px;
 }
 
 /* BOTTOM */
