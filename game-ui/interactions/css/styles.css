@@ -1,0 +1,377 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    cursor:  auto;
+}
+
+
+.full_screen {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    background-color: rgb(112, 144, 173);
+    overflow: hidden;
+    background-image: url("../assets/BACKGROUND.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    
+
+}
+
+.game_ui_content {
+    width: 97vw;
+    padding: 2%;
+    height: 90vh;
+    /* background-color: rgb(187, 238, 234); */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.icons {
+    width: 100px;
+    font-size: 70px;
+    height: auto;
+}
+
+.icons:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+
+
+/* TOP */
+.top_screen {
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.health{
+    align-items: end;
+    height: 151px;
+    
+}
+
+.heart {
+    width: auto;
+    height: 150px;
+
+
+}
+
+.heart.beat{
+    animation-name: beat;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in; 
+    transition: all 1s;
+}
+
+
+@keyframes beat {
+    0% {
+        transform: scale( 1 );    
+      }
+      20% {
+        transform: scale( 1.05 ) 
+          translateX(1%) 
+          translateY(1%);
+      } 
+      40% {
+        transform: scale( 1.2 ) 
+          translateX(2%) 
+          translateY(2%);
+      }
+}
+
+
+
+.nav_hub {
+    /* background-color: antiquewhite; */
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: end;
+
+}
+
+
+#img_compass_top {
+    width: 130px;
+    height: auto;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 60px;
+    margin-right: 65px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+#img_compass_bottom {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 30px;
+    /* position: absolute; */
+   /* top: 0; */
+   
+
+}
+
+.map_icon {
+
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    right: 180px;
+    top: 120px;
+    position: absolute;
+    border-radius: 100px;
+    z-index: 2;
+  
+    /* transition: all 1s */
+    
+}
+
+
+
+/* SIDE */
+.side_bar {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: end;
+}
+
+.mission_alert{
+    width: 100px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.mission_hover{
+   display: flex;
+   color: #33333300;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    margin-top: 10px;
+
+    transition: all .5s;
+}
+
+.mission_hover p{
+    width: 150px;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mission_status{
+    font-weight: bold
+}
+
+.mission_hover:hover{
+    cursor: pointer;
+    background-color: #7CA0AE;
+    color: #333333;
+    border-radius: 20px;
+    width: 300px;
+    margin-left: -200px;
+}
+
+@keyframes mission_slide {
+    from {
+        transform:skewX(0);
+    }
+    to {
+        transform:skewX(50px);
+    }
+}
+
+.mission_hover img{
+    height: 100px;
+}
+
+/* BOTTOM */
+.bottom_screen {
+    justify-self: end;
+    justify-self: flex-end;
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+
+
+}
+
+
+.mission_icon {
+    width: 125px;
+    height: 151px;
+}
+
+.mission_icon img{
+    margin-top: 10px;
+
+    width: 125px;
+    height: auto;
+
+}
+
+.bottom_screen_content {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.hot_bar {
+    height: 120px;
+    display: flex;
+    align-items: end;
+
+}
+
+.hot_bar_slot {
+    height: 60%;
+    width: 70px;
+    border: 2px solid #333333;
+    background-color: #E6D1B6;
+    border-radius: 15px;
+    margin: 3px;
+    margin-top: 0;
+    margin-bottom: -10px;
+}
+
+.status_hub {
+    /* position: absolute; */
+    right: 0;
+    align-items: end;
+ 
+}
+
+.menu_hub {
+    /* background-color: aqua; */
+    width: 300px;
+    height: 200px;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.inventory_icon img{
+    margin-top: 20px;
+    margin-left: 35px;
+    width: 150px;
+    position: absolute;
+    /* z-index: 100; */
+}
+
+.character_icon{
+    position: absolute;
+}
+
+.character_icon img{
+    
+    width: 80px;
+    margin-top: 110px !important;
+   
+
+}
+
+/* POPUPS */
+
+.pop_ups_box{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 100;
+    transition: all 1s;
+    
+}
+
+
+.pop_ups_box.active{
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.pop_ups{
+    background-color: bisque;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.popup_blur{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(2px);   
+
+}
+
+.popups{
+    position: fixed;
+    position: absolute;
+    top: 10%;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 3%; */
+    transform: translateY(10%);
+    transform: translateX(13%);
+
+    
+}
+
+.close::after{
+    /* position: absolute; */
+    /* top: 0; */
+    
+    display: inline-block;
+    content: "\00d7"; /* This will render the 'X' */
+    color: black;
+    font-size: 50px;
+    margin-right: 15px;
+    position: absolute;
+    right: 0;
+    z-index: 10000;
+}

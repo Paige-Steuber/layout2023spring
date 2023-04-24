@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Game
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" href="assets/COMPASS_TAB.svg" />
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Gothic A1' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/7fc995eada.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="full_screen">
+        <div class="game_ui_content">
+            <div class="top_screen">
+                <div class="status_hub">
+                    <div class="health" >
+                        <img class="heart beat" id="heart_interaction" src="assets/HEART_HEALTH_FULL.svg" alt="ll">
+
+                    </div>
+
+                </div>
+                
+
+                <div class="nav_hub">
+                    <!-- Compass -- spins, map icon click -> open map pop-up -->
+                    <div class="map_icon">
+                        <img id="img_map_icon" class="icons" src="assets/MAP_ICON.svg" alt="ll">
+                        <!-- <i id="img_map_icon" class="fa-solid fa-map icons"></i> -->
+
+                    </div>
+                    <div class="compass_top">
+                        <img id="img_compass_top" src="assets/COMPASS_TOP.svg" alt="ll">
+                        
+
+
+                    </div>
+                    <div class="compass_bottom">
+                        <img id="img_compass_bottom" src="assets/COMPASS_BOTTOM.svg" alt="ll">
+
+                     </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="side_bar">
+                <!-- Missions slide in left from right side  -->
+
+                <div class="mission_alert">
+                    <div class="mission_hover">
+                        <img class="mission icons" src="assets/SCROLL_CHECK.svg" alt="ll">
+                        <div class="mission_text">
+                            <p class="mission_status">COMPLETED </p>
+                            <p class="mission_discription"> Collect Rare Indigo Flowers (10/10)</p>
+                        </div>
+                       
+                    </div>
+                    <div class="mission_hover">
+                        <img class="mission icons" src="assets/SCROLL_QUESTION.svg" alt="ll">
+                        <div class="mission_text">
+                            <p class="mission_status">JUST DISCOVERED </p>
+                            <p class="mission_discription"> Find the Three Missing Skulls (0/3)</p>
+                        </div>
+                       
+                    </div>
+                    <div class="mission_hover">
+                        <img class="mission icons" src="assets/SCROLL_IN_PROGRASS.svg" alt="ll">
+
+                        <div class="mission_text">
+                            <p class="mission_status">IN PROGRESS</p>
+                            <p class="mission_discription"> Eight Fish A-Lookin' (5/8)</p>
+                        </div>
+                       
+                    </div>
+
+                   
+                    <!-- <img class="mission icons" src="assets/SCROLL_CHECK.svg" alt="ll"> -->
+
+
+                </div>
+            </div>
+            <div class="bottom_screen">
+                <!-- health -->
+                <div class="bottom_screen_content">
+                    
+                    <div class="status_hub">
+                        <div class="mission_icon">
+                            <img class="icon" src="assets/MISSION_ICON.svg" alt="ll">
+    
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="hot_bar">
+
+
+                            <div class="hot_bar_slot"></div>
+                            <div class="hot_bar_slot"></div>
+                            <div class="hot_bar_slot"></div>
+                            <div class="hot_bar_slot"></div>
+
+                        </div>
+
+                    </div>
+                   
+
+                    <div class="menu_hub">
+                        <!-- Menu Icons, top left -- clickable -> opens pop-up -->
+    
+    
+                        <div class="inventory_icon icons">
+                            <img class="icons" src="assets/INVENTORY_ICON.svg" alt="ll">
+                        </div>
+    
+                        <div class="character_icon icons">
+                            <img class="icons" src="assets/CHARACTER_ICON.svg" alt="ll">
+    
+                        </div>
+                        
+    
+                    </div>
+                    
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <div id="pop_up_box" class="pop_ups_box">
+            <div class="popup_blur"></div>
+
+            <div class="popups inventory_popup">
+                <a href="#" class="close" id="close_btn"></a>
+            </div>
+
+
+        </div>
+
+</body>
+
+<script src="script.js"></script>
+
+
+</html>
