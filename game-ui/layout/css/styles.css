@@ -2,7 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    cursor: url("assets/CURSOR.svg"), auto;
+    cursor:  auto;
 }
 
 
@@ -11,10 +11,14 @@ body {
     width: 100vw;
     max-width: 100%;
     height: 100vh;
-    background-color: rgb(39, 82, 119);
+    background-color: rgb(112, 144, 173);
     overflow: hidden;
-    background-image: url("../../assets/map\ first\ rough.png");
+    background-image: url("../assets/BACKGROUND.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     display: grid;
+    
 
 }
 
