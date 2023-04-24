@@ -37,10 +37,14 @@ heart.onclick = function(){
     }
     if(heart_click == 4){
         heart.src="assets/HEART_HEALTH_EMPTY.svg"
+        heart.classList.toggle('beat');
+        
     }
     if(heart_click == 5){
         heart_click =0;
         heart.src="assets/HEART_HEALTH_FULL.svg"
+        heart.classList.toggle('beat');
+
     }
 
 };

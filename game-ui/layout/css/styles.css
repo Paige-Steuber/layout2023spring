@@ -57,12 +57,15 @@ body {
     width: auto;
     height: 150px;
 
+
+}
+
+.heart.beat{
     animation-name: beat;
     animation-duration: 1500ms;
     animation-iteration-count: infinite;
     animation-timing-function:ease-in; 
     transition: all 1s;
-
 }
 
 
