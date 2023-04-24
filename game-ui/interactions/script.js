@@ -30,7 +30,7 @@ inventory_btn.onclick = function(){
     popup_box.classList.toggle('active');
     popup_box.style.opacity = 1;
     popup_box.style.display = "block";
-    popup_img.src="assets/IVENTORY_POPUP.svg"
+    popup_img.src="assets/INVENTORY_POPUP.svg"
 
 };
 
