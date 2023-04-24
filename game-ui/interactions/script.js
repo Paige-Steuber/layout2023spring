@@ -1,4 +1,5 @@
 let map_btn = document.getElementById("img_map_icon");
+let inventory_btn = document.getElementById("inventory_btn");
 
 let heart = document.getElementById("heart_interaction");
 let heart_click = 0;
@@ -15,6 +16,7 @@ close_btn.onclick = function(){
 
 };
 
+
 map_btn.onclick = function(){
     console.log("hi");
     popup_box.classList.toggle('active');
@@ -22,9 +24,17 @@ map_btn.onclick = function(){
     popup_box.style.display = "block";
     popup_img.src="assets/MAP_POPUP.svg"
 
+};
 
+inventory_btn.onclick = function(){
+    popup_box.classList.toggle('active');
+    popup_box.style.opacity = 1;
+    popup_box.style.display = "block";
+    popup_img.src="assets/IVENTORY_POPUP.svg"
 
 };
+
+
 
 heart.onclick = function(){
     console.log("heart");
