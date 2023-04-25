@@ -40,7 +40,7 @@ body {
 
 .icons:hover {
     cursor: pointer;
-    opacity: 80%;
+    transform: scale(1.1);
 }
 
 
@@ -61,6 +61,11 @@ body {
     width: auto;
     height: 150px;
 
+
+}
+
+.heart:hover{
+    cursor: pointer;
 
 }
 
